@@ -1,0 +1,20 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+
+spring:
+  ai:
+    zhipuai:
+      api-key: ${ZHIPU_KEY}  # 配置 API Key
+      base-url: "https://open.bigmodel.cn/api/paas"   # 配置 模型地址
+      chat:
+        options:
+          model: glm-4.5
+
+  http:
+    client:
+      read-timeout: 1000000

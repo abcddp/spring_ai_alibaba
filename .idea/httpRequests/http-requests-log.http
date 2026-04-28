@@ -1,0 +1,333 @@
+GET http://localhost:8889/graph/quickStartGraph
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-09T215303.404.json
+
+###
+
+GET http://localhost:8889/graph/quickStartGraph
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-09T214941.404.json
+
+###
+
+GET http://localhost:8889/graph/quickStartGraph
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-09T214805.404.json
+
+###
+
+GET http://localhost:8888/coffee/fetcher?question=爬取这个网页的内容：https://www.mcpworld.com/zh/detail/fc9b5b85dcb2d8dad2a18c5f2cffc7e1
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-02T201803.500.json
+
+###
+
+GET http://localhost:8888/coffee/fetcher?question=爬取这个网页的内容：https://www.mcpworld.com/zh/detail/fc9b5b85dcb2d8dad2a18c5f2cffc7e1
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-02T201300.200.txt
+
+###
+
+GET http://localhost:8888/coffee/import
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-02T200252.200.txt
+
+###
+
+GET http://localhost:8888/coffee/rag-ask?question=我现在下单一杯美式，几点能做好
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-01T204634.200.txt
+
+###
+
+GET http://localhost:8888/coffee/rag-ask?question=我现在下单一杯美式，几点能做好
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-01T204610.200.txt
+
+###
+
+GET http://localhost:8888/coffee/import
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-04-01T203954.200.txt
+
+###
+
+GET http://localhost:8888/coffee/rag-ask?question=我现在下单一杯美式，几点能做好
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-03-31T190720.200.txt
+
+###
+
+GET http://localhost:8888/coffee/rag-ask?question=现在下单一杯美式，需要多久能做好
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-03-31T190557.200.txt
+
+###
+
+GET http://localhost:8888/coffee/import
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-03-31T185819.200.txt
+
+###
+
+GET http://localhost:8888/coffee/rag-ask?question=每种咖啡要做多久
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-03-26T201250.200.txt
+
+###
+
+GET http://localhost:8888/coffee/rag-ask?question=有什么咖啡
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-03-26T201039.200.txt
+
+###
+
+POST http://localhost:8888/rag/search?query=卖什么咖啡
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-03-26T195212.200.json
+
+###
+
+POST http://localhost:8888/rag/search?query=卖什么咖啡
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-03-26T195108.200.json
+
+###
+
+POST http://localhost:8888/rag/search?query=有什么咖啡
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-03-26T194933.200.json
+
+###
+
+GET http://localhost:8888/coffee/import
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-03-26T194817.200.txt
+
+###
+
+POST http://localhost:8888/rag/search?query=我喜欢做什么
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-03-24T194234.200.json
+
+###
+
+POST http://localhost:8888/rag/search?query=我喜欢做什么
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-03-24T193842.200.json
+
+###
+
+POST http://localhost:8888/rag/importData?data=我喜欢游戏
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-03-24T193829.200.txt
+
+###
+
+POST http://localhost:8888/rag/importData?data=我喜欢吃饭
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-03-24T193821.200.txt
+
+###
+
+POST http://localhost:8888/rag/importData?data=我喜欢睡觉
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-03-24T193814.200.txt
+
+###
+
+GET http://localhost:8080/chatclient/simpleMessageChatMemoryAdvisor?query=我叫什么&conversationId=abc
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-03-24T193127.200.txt
+
+###
+
+GET http://localhost:8080/chatclient/simpleMessageChatMemoryAdvisor?query=我叫abc&conversationId=abc
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-03-24T193049.200.txt
+
+###
+
+POST http://localhost:8888/rag/importData?data=你是谁
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2026-03-24T192610.200.txt
+
+###
+
+GET http://localhost:8080/chatmemory/messageChatMemoryAdvisor?query=我叫什么&conversationId=bac
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-03-18T200249.200.txt
+
+###
+
+GET http://localhost:8080/chatmemory/messageChatMemoryAdvisor?query=我叫bac&conversationId=bac
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-03-18T200200.200.txt
+
+###
+
+GET http://localhost:8080/chatmemory/messageChatMemoryAdvisor?query=我叫bacconversationId=bac
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-03-18T200106.400.json
+
+###
+
+GET http://localhost:8080/chatclient/advisor
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-03-17T200502.200.json
+
+###
+
+GET http://localhost:8080/chatclient/advisor
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-03-16T205741.200.json
+
+###
+
+GET http://localhost:8080/chatclient/advisor
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-03-16T205552.200.json
+
+###
+
+GET http://localhost:8080/chatclient/chat_response?query=介绍一下自己
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-03-10T203924.200.json
+
+###
+
+GET http://localhost:8080/zhipu/stream/chat?query=介绍一下自己
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-03-10T193844.200.txt
+
+###
+
+GET http://localhost:8080/zhipu/chatOptions?query=介绍一下自己
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-03-09T212826.200.txt
+
+###
+
+GET http://localhost:8080/zhipu/chatOptions?query=介绍一下自己
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-03-09T211817.200.json
+
+###
+

@@ -1,0 +1,66 @@
+{
+  "result": {
+    "metadata": {
+      "finishReason": "LENGTH",
+      "contentFilters": [],
+      "empty": true
+    },
+    "output": {
+      "messageType": "ASSISTANT",
+      "metadata": {
+        "finishReason": "LENGTH",
+        "id": "202603102039211dd89244e1454e49",
+        "role": "ASSISTANT",
+        "messageType": "ASSISTANT"
+      },
+      "toolCalls": [],
+      "media": [],
+      "text": "你好！我是一个AI助手，旨在通过对话方式为你提供帮助和信息。我可以回答问题、提供解释、参与讨论、协助创作、分析问题"
+    }
+  },
+  "metadata": {
+    "id": "202603102039211dd89244e1454e49",
+    "model": "glm-4.5",
+    "rateLimit": {
+      "requestsLimit": 0,
+      "requestsReset": "PT0S",
+      "tokensLimit": 0,
+      "tokensRemaining": 0,
+      "tokensReset": "PT0S",
+      "requestsRemaining": 0
+    },
+    "usage": {
+      "promptTokens": 13,
+      "completionTokens": 100,
+      "totalTokens": 113,
+      "nativeUsage": {
+        "completion_tokens": 100,
+        "prompt_tokens": 13,
+        "total_tokens": 113
+      }
+    },
+    "promptMetadata": [],
+    "empty": false
+  },
+  "results": [
+    {
+      "metadata": {
+        "finishReason": "LENGTH",
+        "contentFilters": [],
+        "empty": true
+      },
+      "output": {
+        "messageType": "ASSISTANT",
+        "metadata": {
+          "finishReason": "LENGTH",
+          "id": "202603102039211dd89244e1454e49",
+          "role": "ASSISTANT",
+          "messageType": "ASSISTANT"
+        },
+        "toolCalls": [],
+        "media": [],
+        "text": "你好！我是一个AI助手，旨在通过对话方式为你提供帮助和信息。我可以回答问题、提供解释、参与讨论、协助创作、分析问题"
+      }
+    }
+  ]
+}

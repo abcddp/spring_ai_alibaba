@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="0@localhost">
+  <database-model serializer="dbm" dbms="REDIS" family-id="REDIS" format-version="4.54">
+    <root id="1">
+      <ServerVersion>5.0.14.1</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="0">
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="1"/>
+    <schema id="4" parent="1" name="10"/>
+    <schema id="5" parent="1" name="11"/>
+    <schema id="6" parent="1" name="12"/>
+    <schema id="7" parent="1" name="13"/>
+    <schema id="8" parent="1" name="14"/>
+    <schema id="9" parent="1" name="15"/>
+    <schema id="10" parent="1" name="2"/>
+    <schema id="11" parent="1" name="3"/>
+    <schema id="12" parent="1" name="4"/>
+    <schema id="13" parent="1" name="5"/>
+    <schema id="14" parent="1" name="6"/>
+    <schema id="15" parent="1" name="7"/>
+    <schema id="16" parent="1" name="8"/>
+    <schema id="17" parent="1" name="9"/>
+    <redis-key id="18" parent="2" name="blog:liked:23"/>
+    <redis-key id="19" parent="2" name="cache:shop:1"/>
+    <redis-key id="20" parent="2" name="follows:1011"/>
+    <redis-key id="21" parent="2" name="icr:order:2024:04:17"/>
+    <redis-key id="22" parent="2" name="icr:order:2024:04:22"/>
+    <redis-key id="23" parent="2" name="icr:order:2024:04:24"/>
+    <redis-key id="24" parent="2" name="icr:order:2024:05:13"/>
+    <redis-key id="25" parent="2" name="icr:order:2024:05:14"/>
+    <redis-key id="26" parent="2" name="im:max_server_id"/>
+    <redis-key id="27" parent="2" name="seckill:stock:11"/>
+    <redis-key id="28" parent="2" name="sys_config:sys.account.captchaEnabled"/>
+    <redis-key id="29" parent="2" name="sys_config:sys.account.chrtype"/>
+    <redis-key id="30" parent="2" name="sys_config:sys.account.initPasswordModify"/>
+    <redis-key id="31" parent="2" name="sys_config:sys.account.passwordValidateDays"/>
+    <redis-key id="32" parent="2" name="sys_config:sys.account.registerUser"/>
+    <redis-key id="33" parent="2" name="sys_config:sys.index.footer"/>
+    <redis-key id="34" parent="2" name="sys_config:sys.index.menuStyle"/>
+    <redis-key id="35" parent="2" name="sys_config:sys.index.sideTheme"/>
+    <redis-key id="36" parent="2" name="sys_config:sys.index.skinName"/>
+    <redis-key id="37" parent="2" name="sys_config:sys.index.tagsView"/>
+    <redis-key id="38" parent="2" name="sys_config:sys.login.blackIPList"/>
+    <redis-key id="39" parent="2" name="sys_config:sys.user.initPassword"/>
+    <redis-key id="40" parent="2" name="sys_dict:abc_classes_type"/>
+    <redis-key id="41" parent="2" name="sys_dict:sys_common_status"/>
+    <redis-key id="42" parent="2" name="sys_dict:sys_job_group"/>
+    <redis-key id="43" parent="2" name="sys_dict:sys_job_status"/>
+    <redis-key id="44" parent="2" name="sys_dict:sys_normal_disable"/>
+    <redis-key id="45" parent="2" name="sys_dict:sys_notice_status"/>
+    <redis-key id="46" parent="2" name="sys_dict:sys_notice_type"/>
+    <redis-key id="47" parent="2" name="sys_dict:sys_oper_type"/>
+    <redis-key id="48" parent="2" name="sys_dict:sys_show_hide"/>
+    <redis-key id="49" parent="2" name="sys_dict:sys_user_sex"/>
+    <redis-key id="50" parent="2" name="sys_dict:sys_yes_no"/>
+  </database-model>
+</dataSource>

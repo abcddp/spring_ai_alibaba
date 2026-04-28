@@ -1,0 +1,32 @@
+[
+  {
+    "id": "44a5bb76-98e1-42c0-b7c0-47d02a15c3d6",
+    "text": "我喜欢游戏",
+    "media": null,
+    "metadata": {
+      "distance": 0.1245538,
+      "vector_score": 0.1245538
+    },
+    "score": 0.8754462003707886
+  },
+  {
+    "id": "21a94d70-f9bc-4553-9d9d-033215c2996e",
+    "text": "我喜欢吃饭",
+    "media": null,
+    "metadata": {
+      "distance": 0.138116,
+      "vector_score": 0.138116
+    },
+    "score": 0.8618839979171753
+  },
+  {
+    "id": "8972a9e1-c9cf-4618-91a7-9297b5844027",
+    "text": "我喜欢睡觉",
+    "media": null,
+    "metadata": {
+      "distance": 0.1534487,
+      "vector_score": 0.1534487
+    },
+    "score": 0.8465512990951538
+  }
+]

@@ -1,0 +1,66 @@
+{
+  "result": {
+    "metadata": {
+      "finishReason": "STOP",
+      "contentFilters": [],
+      "empty": true
+    },
+    "output": {
+      "messageType": "ASSISTANT",
+      "metadata": {
+        "finishReason": "STOP",
+        "role": "ASSISTANT",
+        "id": "202603092118130df53fd3e14c423a",
+        "messageType": "ASSISTANT"
+      },
+      "toolCalls": [],
+      "media": [],
+      "text": "你好！我是一个AI助手，旨在通过对话为你提供帮助和信息。我可以回答问题、解释概念、协助解决问题、参与讨论，以及提供各种主题的信息。我的知识库涵盖广泛的主题，但我也有局限性，可能无法回答所有问题或处理某些复杂任务。请随时向我提问或寻求帮助，我会尽我所能为你提供支持！"
+    }
+  },
+  "metadata": {
+    "id": "202603092118130df53fd3e14c423a",
+    "model": "glm-4.5",
+    "rateLimit": {
+      "tokensRemaining": 0,
+      "requestsLimit": 0,
+      "tokensLimit": 0,
+      "requestsReset": "PT0S",
+      "requestsRemaining": 0,
+      "tokensReset": "PT0S"
+    },
+    "usage": {
+      "promptTokens": 13,
+      "completionTokens": 169,
+      "totalTokens": 182,
+      "nativeUsage": {
+        "completion_tokens": 169,
+        "prompt_tokens": 13,
+        "total_tokens": 182
+      }
+    },
+    "promptMetadata": [],
+    "empty": false
+  },
+  "results": [
+    {
+      "metadata": {
+        "finishReason": "STOP",
+        "contentFilters": [],
+        "empty": true
+      },
+      "output": {
+        "messageType": "ASSISTANT",
+        "metadata": {
+          "finishReason": "STOP",
+          "role": "ASSISTANT",
+          "id": "202603092118130df53fd3e14c423a",
+          "messageType": "ASSISTANT"
+        },
+        "toolCalls": [],
+        "media": [],
+        "text": "你好！我是一个AI助手，旨在通过对话为你提供帮助和信息。我可以回答问题、解释概念、协助解决问题、参与讨论，以及提供各种主题的信息。我的知识库涵盖广泛的主题，但我也有局限性，可能无法回答所有问题或处理某些复杂任务。请随时向我提问或寻求帮助，我会尽我所能为你提供支持！"
+      }
+    }
+  ]
+}
