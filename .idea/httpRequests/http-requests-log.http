@@ -1,3 +1,12 @@
+GET http://localhost:8080/chatclient/advisor
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-05-01T192440.200.json
+
+###
+
 GET http://localhost:8889/graph/quickStartGraph
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
 Accept-Encoding: br, deflate, gzip, x-gzip

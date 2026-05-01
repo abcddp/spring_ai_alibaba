@@ -85,10 +85,10 @@ public class ZhipuChatClientController {
                 .advisors(new AbcCallAdvisor1(), new AbcCallAdvisor2())
                 .call()
                 .entity(Book.class);
-//         com.abc.advisor.AbcCallAdvisor2          : adviseCall 2请求
-//         com.abc.advisor.AbcCallAdvisor1          : adviseCall 1请求
-//         com.abc.advisor.AbcCallAdvisor1          : adviseCall 1响应
-//         com.abc.advisor.AbcCallAdvisor2          : adviseCall 2响应
+//        com.abc.advisor.AbcCallAdvisor1          : adviseCall 1请求
+//        com.abc.advisor.AbcCallAdvisor2          : adviseCall 2请求
+//        com.abc.advisor.AbcCallAdvisor2          : adviseCall 2响应
+//        com.abc.advisor.AbcCallAdvisor1          : adviseCall 1响应
     }
 
     @GetMapping("/simpleMessageChatMemoryAdvisor")
