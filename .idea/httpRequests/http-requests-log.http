@@ -1,3 +1,102 @@
+GET http://localhost:8889/graph/simpleGraph?word=apple
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-05-06T202127.200.json
+
+###
+
+GET http://localhost:8888/coffee/fetcher?question=爬起并总结一下网页：https://codetop.cc/home
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-05-01T202209.200.txt
+
+###
+
+GET http://localhost:8888/coffee/import
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-05-01T201829.200.txt
+
+###
+
+GET http://localhost:8888/coffee/fetcher?question=爬取这个网页的内容：https://www.mcpworld.com/zh/detail/fc9b5b85dcb2d8dad2a18c5f2cffc7e1
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-05-01T201748.200.txt
+
+###
+
+GET http://localhost:8888/coffee/fetcher?question=爬取这个网页的内容：https://www.mcpworld.com/zh/detail/fc9b5b85dcb2d8dad2a18c5f2cffc7e1
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-05-01T201555.200.txt
+
+###
+
+GET http://localhost:8888/coffee/fetcher?question=爬取这个网页的内容：https://www.mcpworld.com/zh/detail/fc9b5b85dcb2d8dad2a18c5f2cffc7e1
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-05-01T200820.200.txt
+
+###
+
+GET http://localhost:8888/coffee/fetcher?question=爬起并总结一下网页：https://codetop.cc/home
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-05-01T200702.200.txt
+
+###
+
+GET http://localhost:8888/coffee/fetcher?question=https://codetop.cc/home
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-05-01T200448.200.txt
+
+###
+
+GET http://localhost:8888/coffee/fetcher?question=爬取bong总计一下网页：https://www.baidu.com/
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-05-01T200313.200.txt
+
+###
+
+GET http://localhost:8888/coffee/fetcher?question=帮我爬取这个网站：https://codetop.cc/home
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-05-01T200026.200.txt
+
+###
+
+GET http://localhost:8888/coffee/fetcher?question=https://codetop.cc/home，爬取这个网站，总结内容
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-05-01T195852.200.txt
+
+###
+
 GET http://localhost:8080/chatclient/advisor
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
 Accept-Encoding: br, deflate, gzip, x-gzip

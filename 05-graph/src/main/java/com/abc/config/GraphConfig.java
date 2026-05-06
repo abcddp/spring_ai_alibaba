@@ -1,5 +1,7 @@
 package com.abc.config;
 
+import com.abc.node.SentenceConstructionNode;
+import com.abc.node.TranslationNode;
 import com.alibaba.cloud.ai.graph.CompiledGraph;
 import com.alibaba.cloud.ai.graph.KeyStrategyFactory;
 import com.alibaba.cloud.ai.graph.OverAllState;
@@ -10,6 +12,7 @@ import com.alibaba.cloud.ai.graph.exception.GraphStateException;
 import com.alibaba.cloud.ai.graph.state.strategy.ReplaceStrategy;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -19,7 +22,7 @@ import java.util.Map;
 public class GraphConfig {
     private static final Logger log = LoggerFactory.getLogger(GraphConfig.class);
 
-    @Bean
+    @Bean("quickStartGraph")
     public CompiledGraph quickStartGraph() throws GraphStateException {
         //定义状态图
         KeyStrategyFactory keyStrategyFactory = () -> Map.of("input1", new ReplaceStrategy(),
@@ -48,6 +51,29 @@ public class GraphConfig {
         stateGraph.addEdge(StateGraph.START, "node1");
         stateGraph.addEdge("node1", "node2");
         stateGraph.addEdge("node2", StateGraph.END);
+
+        return stateGraph.compile();
+    }
+
+    @Bean("simpleGraph")
+    public CompiledGraph simpleGraph(ChatClient.Builder clientBuilder) throws GraphStateException {
+        KeyStrategyFactory keyStrategyFactory = () -> Map.of("word", new ReplaceStrategy(),
+                "sentence", new ReplaceStrategy(),
+                "translation", new ReplaceStrategy());
+
+        StateGraph stateGraph = new StateGraph("simpleGraph", keyStrategyFactory);
+
+        //定义节点
+        stateGraph.addNode("sentenceConstructionNode",
+                AsyncNodeAction.node_async(new SentenceConstructionNode(clientBuilder)));
+
+        stateGraph.addNode("translationNode",
+                AsyncNodeAction.node_async(new TranslationNode(clientBuilder)));
+
+        //定义边
+        stateGraph.addEdge(StateGraph.START, "sentenceConstructionNode");
+        stateGraph.addEdge("sentenceConstructionNode", "translationNode");
+        stateGraph.addEdge("translationNode", StateGraph.END);
 
         return stateGraph.compile();
     }
