@@ -1,3 +1,48 @@
+GET http://localhost:8889/graph/simpleGraph?word=cover
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-06-06T175039.200.json
+
+###
+
+GET http://localhost:8889/graph/simpleGraph?word=fabulous
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-06-06T174936.500.json
+
+###
+
+GET http://localhost:8889/graph/simpleGraph?word=cover
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-06-06T174455.500.json
+
+###
+
+GET http://localhost:8889/graph/simpleGraph?word=fabulous
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-06-06T174431.500.json
+
+###
+
+GET http://localhost:8889/graph/simpleGraph?word=cover
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-05-21T211435.200.json
+
+###
+
 GET http://localhost:8889/graph/simpleGraph?word=apple
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.4
 Accept-Encoding: br, deflate, gzip, x-gzip
@@ -409,33 +454,6 @@ Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
 
 <> 2026-03-10T203924.200.json
-
-###
-
-GET http://localhost:8080/zhipu/stream/chat?query=介绍一下自己
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-03-10T193844.200.txt
-
-###
-
-GET http://localhost:8080/zhipu/chatOptions?query=介绍一下自己
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-03-09T212826.200.txt
-
-###
-
-GET http://localhost:8080/zhipu/chatOptions?query=介绍一下自己
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-03-09T211817.200.json
 
 ###
 

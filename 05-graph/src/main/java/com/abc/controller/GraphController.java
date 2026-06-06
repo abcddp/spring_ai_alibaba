@@ -20,10 +20,14 @@ public class GraphController {
 
     private final CompiledGraph compiledGraph;
     private final CompiledGraph simpleGraph;
+    private final CompiledGraph conditionalGraph;
 
-    public GraphController(@Qualifier("quickStartGraph")  CompiledGraph compiledGraph, @Qualifier("simpleGraph")CompiledGraph simpleGraph) {
+    public GraphController(@Qualifier("quickStartGraph")  CompiledGraph compiledGraph,
+                           @Qualifier("simpleGraph")CompiledGraph simpleGraph,
+                           @Qualifier("conditionalGraph")CompiledGraph conditionalGraph) {
         this.compiledGraph = compiledGraph;
         this.simpleGraph = simpleGraph;
+        this.conditionalGraph = conditionalGraph;
     }
 
     @GetMapping("/quickStartGraph")
@@ -38,6 +42,14 @@ public class GraphController {
         Optional<OverAllState> optionalOverAllState = simpleGraph.call(Map.of("word",word));
         log.info("overAllState:{}",optionalOverAllState);
         return optionalOverAllState.map(OverAllState::data).orElse(Map.of());
+    }
+
+    @GetMapping("/conditionalGraph")
+    public Map<String, Object> conditionalGraph(@RequestParam("topic") String topic){
+        Optional<OverAllState> overAllStateOptional = conditionalGraph.call(Map.of("topic", topic));
+        Map<String, Object> data = overAllStateOptional.map(OverAllState::data).orElse(Map.of());
+        log.info("overAllState:{}",data);
+        return data;
     }
 
 }

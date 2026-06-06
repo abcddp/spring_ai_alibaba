@@ -1,12 +1,13 @@
 package com.abc.config;
 
-import com.abc.node.SentenceConstructionNode;
-import com.abc.node.TranslationNode;
+import com.abc.node.*;
 import com.alibaba.cloud.ai.graph.CompiledGraph;
 import com.alibaba.cloud.ai.graph.KeyStrategyFactory;
 import com.alibaba.cloud.ai.graph.OverAllState;
 import com.alibaba.cloud.ai.graph.StateGraph;
+import com.alibaba.cloud.ai.graph.action.AsyncEdgeAction;
 import com.alibaba.cloud.ai.graph.action.AsyncNodeAction;
+import com.alibaba.cloud.ai.graph.action.EdgeAction;
 import com.alibaba.cloud.ai.graph.action.NodeAction;
 import com.alibaba.cloud.ai.graph.exception.GraphStateException;
 import com.alibaba.cloud.ai.graph.state.strategy.ReplaceStrategy;
@@ -74,6 +75,31 @@ public class GraphConfig {
         stateGraph.addEdge(StateGraph.START, "sentenceConstructionNode");
         stateGraph.addEdge("sentenceConstructionNode", "translationNode");
         stateGraph.addEdge("translationNode", StateGraph.END);
+
+        return stateGraph.compile();
+    }
+
+    @Bean("conditionalGraph")
+    public CompiledGraph conditionalGraph(ChatClient.Builder clientBuilder) throws GraphStateException{
+        KeyStrategyFactory keyStrategyFactory = () -> Map.of("topic",new ReplaceStrategy());
+        // 定义状态图 StateGraph
+        StateGraph stateGraph = new StateGraph("conditionalGraph", keyStrategyFactory);
+
+        stateGraph.addNode("生成笑话",AsyncNodeAction.node_async(new GenerateJokeNode(clientBuilder)));
+        stateGraph.addNode("评估笑话",AsyncNodeAction.node_async(new EvaluateJokesNode(clientBuilder)));
+        stateGraph.addNode("优化笑话",AsyncNodeAction.node_async(new EnhancejokeQualityNode(clientBuilder)));
+
+        stateGraph.addEdge(StateGraph.START,"生成笑话");
+        stateGraph.addEdge("生成笑话", "评估笑话");
+        //三个参数，第一个，来源节点，第二个，来源节点的哪个参数，第三个，参数的值匹配后续节点的集合
+        stateGraph.addConditionalEdges("评估笑话", AsyncEdgeAction.edge_async(new EdgeAction() {
+            @Override
+            public String apply(OverAllState state) throws Exception {
+                return state.value("result", "优秀");
+            }
+        }), Map.of("优秀", StateGraph.END, "不够优秀","优化笑话"));
+
+        stateGraph.addEdge("优化笑话", StateGraph.END);
 
         return stateGraph.compile();
     }
