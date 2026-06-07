@@ -1,3 +1,12 @@
+GET http://localhost:8889/graph/loopGraph?topic=叶子
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-06-07T160420.200.json
+
+###
+
 GET http://localhost:8889/graph/simpleGraph?word=cover
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.5
 Accept-Encoding: br, deflate, gzip, x-gzip
@@ -445,15 +454,6 @@ Accept-Encoding: br, deflate, gzip, x-gzip
 Accept: */*
 
 <> 2026-03-16T205552.200.json
-
-###
-
-GET http://localhost:8080/chatclient/chat_response?query=介绍一下自己
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-03-10T203924.200.json
 
 ###
 

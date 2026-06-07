@@ -103,4 +103,26 @@ public class GraphConfig {
 
         return stateGraph.compile();
     }
+
+    @Bean("loopGraph")
+    public CompiledGraph loopGraph(ChatClient.Builder clientBuilder) throws GraphStateException{
+        KeyStrategyFactory keyStrategyFactory = () -> Map.of("topic",new ReplaceStrategy());
+        // 定义状态图 StateGraph
+        StateGraph stateGraph = new StateGraph("loopGraph", keyStrategyFactory);
+        stateGraph.addNode("生成笑话",AsyncNodeAction.node_async(new GenerateJokeNode(clientBuilder)));
+        stateGraph.addNode("评估笑话",AsyncNodeAction.node_async(new LoopEvaluateJokesNode(clientBuilder,7,3)));
+
+        // 定义边
+        stateGraph.addEdge(StateGraph.START,"生成笑话");
+        stateGraph.addEdge("生成笑话","评估笑话");
+
+        stateGraph.addConditionalEdges("评估笑话",AsyncEdgeAction.edge_async(new EdgeAction() {
+            @Override
+            public String apply(OverAllState state) throws Exception {
+                return state.value("result","loop");
+            }
+        }),Map.of("loop","生成笑话","break",StateGraph.END));
+        return stateGraph.compile();
+    }
+
 }
