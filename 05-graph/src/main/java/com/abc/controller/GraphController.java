@@ -2,6 +2,7 @@ package com.abc.controller;
 
 import com.alibaba.cloud.ai.graph.CompiledGraph;
 import com.alibaba.cloud.ai.graph.OverAllState;
+import com.alibaba.cloud.ai.graph.RunnableConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -22,15 +23,18 @@ public class GraphController {
     private final CompiledGraph simpleGraph;
     private final CompiledGraph conditionalGraph;
     private final CompiledGraph loopGraph;
+    private final CompiledGraph saveGraph;
 
     public GraphController(@Qualifier("quickStartGraph")  CompiledGraph compiledGraph,
                            @Qualifier("simpleGraph")CompiledGraph simpleGraph,
                            @Qualifier("conditionalGraph")CompiledGraph conditionalGraph,
-                           @Qualifier("loopGraph") CompiledGraph loopGraph) {
+                           @Qualifier("loopGraph") CompiledGraph loopGraph,
+                           @Qualifier("saveGraph") CompiledGraph saveGraph) {
         this.compiledGraph = compiledGraph;
         this.simpleGraph = simpleGraph;
         this.conditionalGraph = conditionalGraph;
         this.loopGraph = loopGraph;
+        this.saveGraph = saveGraph;
     }
 
     @GetMapping("/quickStartGraph")
@@ -58,6 +62,18 @@ public class GraphController {
     @GetMapping("/loopGraph")
     public Map<String, Object> loopGraph(@RequestParam("topic") String topic){
         Optional<OverAllState> overAllStateOptional = loopGraph.call(Map.of("topic", topic));
+        Map<String, Object> data = overAllStateOptional.map(OverAllState::data).orElse(Map.of());
+        log.info("overAllState:{}",data);
+        return data;
+    }
+
+    //conversationId不同，存储到的historyMsg也不同，最终都是存在内存里
+    @GetMapping("/saveGraph")
+    public Map<String, Object> saveGraph(@RequestParam("msg") String msg, @RequestParam("conversationId")  String conversationId){
+        RunnableConfig runnableConfig = RunnableConfig.builder()
+                .threadId(conversationId)
+                .build();
+        Optional<OverAllState> overAllStateOptional = saveGraph.call(Map.of("msg", msg), runnableConfig);
         Map<String, Object> data = overAllStateOptional.map(OverAllState::data).orElse(Map.of());
         log.info("overAllState:{}",data);
         return data;

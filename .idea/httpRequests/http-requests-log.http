@@ -1,3 +1,111 @@
+GET http://localhost:8889/graph/saveGraph?msg=abc123&conversationId=1
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-06-08T212913.200.json
+
+###
+
+GET http://localhost:8889/graph/saveGraph?msg=11111&conversationId=2
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-06-08T212859.200.json
+
+###
+
+GET http://localhost:8889/graph/saveGraph?msg=1111&conversationId=2
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-06-08T212856.200.json
+
+###
+
+GET http://localhost:8889/graph/saveGraph?msg=111&conversationId=2
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-06-08T212852.200.json
+
+###
+
+GET http://localhost:8889/graph/saveGraph?msg=abc111&conversationId=2
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-06-08T212840.200.json
+
+###
+
+GET http://localhost:8889/graph/saveGraph?msg=abc111&conversationId=1
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-06-08T212832.200.json
+
+###
+
+GET http://localhost:8889/graph/saveGraph?msg=abc11&conversationId=1
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-06-08T212829.200.json
+
+###
+
+GET http://localhost:8889/graph/saveGraph?msg=abc1&conversationId=1
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-06-08T212825.200.json
+
+###
+
+GET http://localhost:8889/graph/saveGraph?msg=abc&conversationId=1
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-06-08T212817.200.json
+
+###
+
+GET http://localhost:8889/graph/saveGraph?msg=hi2
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-06-08T212340.200.json
+
+###
+
+GET http://localhost:8889/graph/saveGraph?msg=hi1
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-06-08T212336.200.json
+
+###
+
+GET http://localhost:8889/graph/saveGraph?msg=hi
+User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.5
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+<> 2026-06-08T212330.200.json
+
+###
+
 GET http://localhost:8889/graph/loopGraph?topic=叶子
 User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.5
 Accept-Encoding: br, deflate, gzip, x-gzip
@@ -342,118 +450,6 @@ Accept: */*
 content-length: 0
 
 <> 2026-03-24T193842.200.json
-
-###
-
-POST http://localhost:8888/rag/importData?data=我喜欢游戏
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2026-03-24T193829.200.txt
-
-###
-
-POST http://localhost:8888/rag/importData?data=我喜欢吃饭
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2026-03-24T193821.200.txt
-
-###
-
-POST http://localhost:8888/rag/importData?data=我喜欢睡觉
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2026-03-24T193814.200.txt
-
-###
-
-GET http://localhost:8080/chatclient/simpleMessageChatMemoryAdvisor?query=我叫什么&conversationId=abc
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-03-24T193127.200.txt
-
-###
-
-GET http://localhost:8080/chatclient/simpleMessageChatMemoryAdvisor?query=我叫abc&conversationId=abc
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-03-24T193049.200.txt
-
-###
-
-POST http://localhost:8888/rag/importData?data=你是谁
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-content-length: 0
-
-<> 2026-03-24T192610.200.txt
-
-###
-
-GET http://localhost:8080/chatmemory/messageChatMemoryAdvisor?query=我叫什么&conversationId=bac
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-03-18T200249.200.txt
-
-###
-
-GET http://localhost:8080/chatmemory/messageChatMemoryAdvisor?query=我叫bac&conversationId=bac
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-03-18T200200.200.txt
-
-###
-
-GET http://localhost:8080/chatmemory/messageChatMemoryAdvisor?query=我叫bacconversationId=bac
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-03-18T200106.400.json
-
-###
-
-GET http://localhost:8080/chatclient/advisor
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-03-17T200502.200.json
-
-###
-
-GET http://localhost:8080/chatclient/advisor
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-03-16T205741.200.json
-
-###
-
-GET http://localhost:8080/chatclient/advisor
-User-Agent: IntelliJ HTTP Client/IntelliJ IDEA 2025.3.3
-Accept-Encoding: br, deflate, gzip, x-gzip
-Accept: */*
-
-<> 2026-03-16T205552.200.json
 
 ###
 

@@ -17,6 +17,7 @@ import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import java.util.ArrayList;
 import java.util.Map;
 
 @Configuration
@@ -122,6 +123,24 @@ public class GraphConfig {
                 return state.value("result","loop");
             }
         }),Map.of("loop","生成笑话","break",StateGraph.END));
+        return stateGraph.compile();
+    }
+
+    @Bean("saveGraph")
+    public CompiledGraph saveGraph(ChatClient.Builder clientBuilder) throws GraphStateException{
+        KeyStrategyFactory keyStrategyFactory = () -> Map.of("",new ReplaceStrategy());
+        StateGraph stateGraph = new StateGraph("saveGraph", keyStrategyFactory);
+        stateGraph.addNode("对话存储",AsyncNodeAction.node_async(new NodeAction() {
+            @Override
+            public Map<String, Object> apply(OverAllState state) throws Exception {
+                String msg = state.value("msg", "");
+                ArrayList<Object> historyMsg = state.value("historyMsg", new ArrayList<>());
+                historyMsg.add(msg);
+                return Map.of("historyMsg",historyMsg);
+            }
+        }));
+        stateGraph.addEdge(StateGraph.START,"对话存储");
+        stateGraph.addEdge("对话存储", StateGraph.END);
         return stateGraph.compile();
     }
 
